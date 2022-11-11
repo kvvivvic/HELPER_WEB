@@ -65,7 +65,7 @@ include "./inc/session.php";
                 <a href="../HELPER_WEB/html/login_page.html">로그인</a>
               </li>
               <li class="free">
-                <a href="html/select_signin.html">무료 회원가입</a>
+                <a href="./html/select_signin.html">무료 회원가입</a>
               </li>
             </ul>
           </div>
@@ -77,7 +77,7 @@ include "./inc/session.php";
               <a href="#">전체메뉴</a>
             </li>
             <li class="menu_list menu_list2">
-              <a href="./html/notice.html">공지사항</a>
+              <a href="./notice/list.php">공지사항</a>
             </li>
             <li class="menu_list menu_list3"><a href="#">이벤트</a></li>
           </ul>
@@ -453,7 +453,7 @@ include "./inc/session.php";
               <a href="#">전체메뉴</a>
             </li>
             <li class="menu_list menu_list2">
-              <a href="./html/notice.html">공지사항</a>
+              <a href="./notice/list.php">공지사항</a>
             </li>
             <li class="menu_list menu_list3"><a href="#">이벤트</a></li>
           </ul>

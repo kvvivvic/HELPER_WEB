@@ -18,6 +18,7 @@ $cnt = $array["cnt"] + 1;
 $sql = "update notice set cnt = $cnt where idx =$n_idx;";
 mysqli_query($dbcon, $sql);
 
+mysqli_close($dbcon)
 ?>
 
 <!DOCTYPE html>
