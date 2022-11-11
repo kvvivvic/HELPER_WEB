@@ -1,0 +1,460 @@
+main {
+  width: 1920px;
+  height: 1350px;
+  border-bottom: 1px solid #000;
+  margin-top: 250px;
+}
+.minor_btn {
+  background: url(../images/minus_icon.jpg) no-repeat;
+  border: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.plus_btn {
+  background: url(../images/plus_icon.jpg) no-repeat;
+  border: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.main_inner {
+  width: 1200px;
+  height: 1060px;
+  margin: 0 auto;
+}
+.main_inner h2 {
+  margin: 86px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #212224;
+}
+.section {
+  width: 1200px;
+  height: 868px;
+  display: flex;
+  justify-content: space-between;
+}
+.section_left {
+  width: 745px;
+  height: 586px;
+}
+.section_right {
+  width: 441px;
+  height: 400px;
+  border: 1px solid #cecfd7;
+}
+.order {
+  width: 745px;
+  height: 278px;
+  border: 1px solid #cecfd7;
+  position: relative;
+  margin-bottom: 32px;
+}
+.order_inner h3 {
+  font-size: 15px;
+  color: #303441;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+.order_inner {
+  width: 722px;
+  height: 215px;
+  position: absolute;
+  top: 27px;
+  left: 11px;
+}
+.order_title {
+  width: 722px;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.order_title img {
+  width: 120px;
+  height: 90px;
+  border-radius: 6px;
+  margin-right: 6px;
+}
+.order_info {
+  width: 188px;
+  height: 40px;
+}
+.order_info p {
+  font-size: 15px;
+  color: #303441;
+  margin-top: 6px;
+}
+.order_profile {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+.order_profile img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.order_profile span {
+  font-size: 13px;
+  color: #9a9ba7;
+}
+.order_select {
+  width: 722px;
+  height: 86px;
+}
+.select_title {
+  width: 730px;
+  height: 41px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #cecfd7;
+  color: #9a9ba7;
+  font-size: 13px;
+}
+
+.select_bagic {
+  width: 276px;
+  margin-right: 16px;
+  display: flex;
+  justify-content: flex-start;
+}
+.select_number {
+  width: 138px;
+  margin-right: 16px;
+  display: flex;
+  justify-content: center;
+}
+.select_day {
+  width: 138px;
+  margin-right: 16px;
+  display: flex;
+  justify-content: center;
+}
+.select_price {
+  width: 120px;
+  display: flex;
+  justify-content: flex-end;
+}
+.order_value {
+  height: 68px;
+  display: flex;
+  align-items: center;
+}
+.selcet_value {
+  display: flex;
+  align-items: center;
+}
+.selcet_value ul {
+  height: 85px;
+}
+.selcet_value li {
+  font-size: 14px;
+  color: #303441;
+}
+.selcet_bagic_value {
+  width: 276px;
+  margin-right: 16px;
+  display: flex;
+  justify-content: flex-start;
+}
+.selcet_number_value {
+  width: 138px;
+  margin-right: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+.selcet_day_value {
+  width: 138px;
+  margin-right: 16px;
+  display: flex;
+  justify-content: center;
+}
+.selcet_price_value {
+  width: 120px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 클라이언트 */
+
+.client {
+  width: 745px;
+  height: 154px;
+  border: 1px solid #cecfd7;
+  position: relative;
+  margin-bottom: 32px;
+}
+.client_inner {
+  width: 708px;
+  height: 68px;
+  margin: 45px 14px 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.client_txt h3 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #303441;
+}
+.client_txt1 {
+  margin-bottom: 8px;
+}
+.client_txt li {
+  color: #727585;
+  font-size: 15px;
+}
+.client_btn {
+  width: 305px;
+  height: 63px;
+  border-left: 1px solid #cecfd7;
+  display: flex;
+  align-items: center;
+}
+.phone_btn {
+  width: 276px;
+  height: 42px;
+  margin-left: 16px;
+  color: #116ad4;
+  background-color: #fff;
+  border: 1px solid #116ad4;
+  font-weight: bold;
+  border-radius: 6px;
+}
+.phone_btn:hover {
+  cursor: pointer;
+  background-color: #116ad4;
+  border: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* 할인/캐시사용 */
+
+.cash {
+  width: 745px;
+  height: 177px;
+  border: 1px solid #cecfd7;
+  position: relative;
+  margin-bottom: 32px;
+}
+.cash_inner {
+  width: 567px;
+  height: 124px;
+  margin: 28px 153px 24px 27px;
+}
+.cash_inner h3 {
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #303441;
+}
+.use_coupon {
+  display: flex;
+  position: relative;
+  margin-bottom: 14px;
+}
+.use_coupon p {
+  width: 104px;
+  margin-right: 14px;
+  color: #303441;
+  display: flex;
+  align-items: center;
+}
+.use_coupon input {
+  width: 456px;
+  height: 31px;
+  border: 1px solid #e4e5ed;
+  border-radius: 6px;
+}
+.use_coupon input::placeholder {
+  padding-left: 14px;
+  color: #9a9ba7;
+}
+.use_coupon img {
+  width: 13px;
+  height: 7px;
+  position: absolute;
+  top: 14px;
+  right: 24px;
+}
+.use_cash {
+  display: flex;
+  position: relative;
+}
+.use_cash p {
+  width: 104px;
+  margin-right: 14px;
+  color: #303441;
+  display: flex;
+}
+.use_cash input {
+  width: 145px;
+  height: 31px;
+  border: 1px solid #e4e5ed;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+.use_cash input::placeholder {
+  padding-left: 14px;
+  color: #fff;
+}
+.cash_btn {
+  margin-left: 12px;
+  width: 63px;
+  height: 31px;
+  border-radius: 6px;
+  border: 1px solid #303441;
+  font-size: 12px;
+  color: #303441;
+  background-color: #fff;
+}
+.use_cash span {
+  font-size: 13px;
+  color: #9a9ba7;
+}
+.have_cash {
+  display: flex;
+  flex-direction: column;
+}
+.payway {
+  width: 745px;
+  height: 153px;
+  border: 1px solid #cecfd7;
+  position: relative;
+}
+.payway h3 {
+  margin-top: 31px;
+  margin-left: 27px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #303441;
+}
+.payway ul {
+  height: 106px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.payway ul li {
+  font-size: 15px;
+  font-weight: bold;
+  color: #303441;
+}
+.payway ul li:hover {
+  cursor: pointer;
+  color: #ffd300;
+}
+.payway ul li:first-child {
+  color: #ffd300;
+}
+.kakao {
+  display: flex;
+  align-items: center;
+}
+.kakaopay {
+  width: 35px;
+  height: 15px;
+}
+.toss {
+  display: flex;
+  align-items: center;
+}
+.tosspay {
+  width: 20px;
+  height: 20px;
+}
+.right_inner {
+  width: 400px;
+  height: 314px;
+  margin: 42px auto 0;
+}
+.all_pay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.coupon_sale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.cash_use {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.pay_title {
+  font-size: 15px;
+  color: #555969;
+}
+.sale {
+  font-size: 15px;
+  color: #303441;
+  font-weight: 700;
+}
+.total {
+  width: 400px;
+  height: 178px;
+  border-top: 1px solid #e4e5ed;
+}
+.total_pay_section {
+  margin: 32px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total_pay {
+  font-size: 24px;
+  font-weight: 700;
+  color: #212224;
+}
+.apply_form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.apply_btn {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border: 1px solid #e4e5ed;
+  border-radius: 2px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.apply_txt {
+  font-size: 12px;
+  color: #555969;
+}
+.payment_btn {
+  width: 400px;
+  height: 46px;
+  border-radius: 6px;
+  border: none;
+  background-color: #ffd300;
+  color: #303441;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.payment_btn:hover {
+  background-color: #fff;
+  border: 2px solid #ffd300;
+  color: #ffd300;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.payment_txt {
+  font-size: 12px;
+  color: #9a9ba7;
+}

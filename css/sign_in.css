@@ -1,0 +1,142 @@
+/* main */
+
+main {
+  height: 1300px;
+  border-bottom: 1px solid #000;
+  margin-top: 250px;
+}
+input {
+  font-size: 16px;
+  color: #323232;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+.main_logo {
+  width: 72px;
+  height: 82px;
+  background: url(../images/main_logo.jpg) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  margin: 107px auto 32px;
+}
+.main_inner {
+  width: 560px;
+  height: 920px;
+  box-sizing: border-box;
+  border: 2px solid #ffd300;
+  margin: 0 auto;
+}
+fieldset {
+  border: none;
+}
+.main_box {
+  width: 400px;
+  height: 670px;
+  margin: 56px auto;
+}
+
+.info_box input {
+  width: 396px;
+  height: 50px;
+  border: 2px solid #e4e5ed;
+  border-radius: 2px;
+}
+.info_box input:hover {
+  border: 2px solid #ffd300;
+}
+.info_box input::placeholder {
+  font-size: 16px;
+  color: #e4e5ed;
+}
+.info_pw {
+  margin-bottom: 10px;
+}
+.info_name {
+  margin-bottom: 33px;
+}
+.info_id {
+  margin-bottom: 28px;
+}
+.terms_check {
+  color: #737373;
+}
+.label {
+  display: inline-block;
+  font-size: 24px;
+  color: #323232;
+  margin-bottom: 10px;
+}
+.checkbox {
+  margin: 52px 0px 32px;
+}
+.main_box input[type="checkbox"] {
+  display: none;
+}
+.main_box input[type="checkbox"] + label {
+  display: inline-block;
+  height: 20px;
+  padding-left: 24px;
+  margin-bottom: 22px;
+  background: url(../images/checkbox.png) no-repeat;
+  cursor: pointer;
+}
+.main_box input[type="checkbox"]:checked + label {
+  background: url(../images/check_on.png) no-repeat;
+}
+.checkbox span a {
+  color: #ffd300;
+  text-decoration: underline;
+}
+.main_box button {
+  display: block;
+  width: 396px;
+  height: 52px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_box button img {
+  padding-right: 12px;
+}
+.main_box button.sign_btn {
+  margin-bottom: 8px;
+  background-color: #ffd300;
+  border: none;
+  border-radius: 2px;
+}
+.main_box button.googlesign_btn {
+  background-color: #a1aaff;
+  border: none;
+  border-radius: 2px;
+}
+.sign_btn {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.googlesign_btn {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.err_txt {
+  display: inline-block;
+  font-size: 12px;
+  color: red;
+  margin-top: 8px;
+}
+.dsp_txt {
+  display: inline-block;
+  font-size: 12px;
+  color: red;
+  margin-top: 8px;
+}
+.err_txt_pw {
+  display: inline-block;
+  font-size: 12px;
+  color: red;
+  margin-bottom: 8px;
+}
