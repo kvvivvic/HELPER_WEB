@@ -412,7 +412,7 @@
           <a href="#">전체메뉴</a>
         </li>
         <li class="menu_list menu_list2">
-          <a href="./notice/list.php">공지사항</a>
+          <a href="../notice/list.php">공지사항</a>
         </li>
         <li class="menu_list menu_list3"><a href="#">이벤트</a></li>
       </ul>

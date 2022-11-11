@@ -26,7 +26,6 @@ if ($e_pageNum > $total_page) {
   $e_pageNum = $total_page;
 }
 ?>
-?>
 
 
 <!DOCTYPE html>
@@ -69,7 +68,7 @@ if ($e_pageNum > $total_page) {
           <?php }; ?>
           <form action="">
             <div class="dropdown">
-              <button class="dropdown_btn">
+              <button class="dropdown_btn" type="button">
                 <span>제목 </span>
                 <img src="../images/notice_dropdown_btn.jpg" alt="" />
               </button>

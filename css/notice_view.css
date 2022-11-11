@@ -187,3 +187,6 @@ tbody tr {
   color: #ffd300;
   transition: 0.3s;
 }
+.aside_section ul li a {
+  width: 100%;
+}

@@ -83,6 +83,7 @@ const job_list = $(".job_list");
 const bs_input = $("#bs_input");
 const bs_value = $("#bs_input_value");
 const bs_list = $(".bs_list");
+let job = $(".job");
 
 job_input.click(function () {
   job_list.slideToggle();
@@ -90,6 +91,7 @@ job_input.click(function () {
 
 job_list.eq(0).click(function () {
   job_value.html("프리랜서");
+  job.val("프리랜서");
 });
 job_list.eq(1).click(function () {
   job_value.html("소상공인");
