@@ -18,7 +18,6 @@ $cnt = $array["cnt"] + 1;
 $sql = "update notice set cnt = $cnt where idx =$n_idx;";
 mysqli_query($dbcon, $sql);
 
-mysqli_close($dbcon)
 ?>
 
 <!DOCTYPE html>
@@ -63,10 +62,18 @@ mysqli_close($dbcon)
           <aside class="aside_section">
             <h3>이 섹션의 문서</h3>
             <ul>
+              <?php
+              $t_sql = "select * from notice order by idx desc;";
+              $t_result = mysqli_query($dbcon, $t_sql);
+              while ($t_array = mysqli_fetch_array($t_result)) {
+              ?>
               <li>
-                <a href="view.php?n_idx=<?php echo $array["idx"] ?>">
+                <a href="../notice/view.php?n_idx=<?php echo $t_array["idx"] ?>">
+                  <?php echo $t_array["n_title"]; ?>
                 </a>
               </li>
+              <?php
+              }; ?>
             </ul>
           </aside>
           <table class="notice_content">
