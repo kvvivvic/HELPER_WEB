@@ -1,5 +1,11 @@
 <?php
+session_start();
 include "../inc/session.php";
+include "../inc/dbcon.php";
+$sql =
+  "select idx ,u_name ,u_id, pwd ,mobile from members where u_id='$s_id';";
+$result = mysqli_query($dbcon, $sql);
+$array = mysqli_fetch_array($result);
 ?>
 
 <!DOCTYPE html>
@@ -43,23 +49,23 @@ include "../inc/session.php";
           <h4>이름</h4>
           <div class="profile_name">
             <a href="">
-              <span>권기환</span>
+              <span><?php echo $array["u_name"] ?></span>
               <img src="../images/event_btn_next.jpg" alt="" />
             </a>
           </div>
           <h4>이메일</h4>
           <div class="profile_email">
-            <span>kghwan2@naver.com</span>
+            <span><?php echo $array["u_id"] ?></span>
             <img src="../images/event_btn_next.jpg" alt="" />
           </div>
           <h4>비밀번호</h4>
           <div class="profile_pw">
-            <span>*********</span>
+            <span><?php echo $array["pwd"] ?></span>
             <img src="../images/event_btn_next.jpg" alt="" />
           </div>
           <h4>휴대폰 번호</h4>
           <div class="profile_number">
-            <span>미인증</span>
+            <span><?php echo $array["mobile"] ?></span>
             <img src="../images/event_btn_next.jpg" alt="" />
           </div>
           <div class="profile_exit">
