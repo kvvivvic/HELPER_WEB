@@ -400,8 +400,8 @@
         <div class="user_info">
           <h2 class="hidden">사용자 메뉴</h2>
           <span class="pnt_name">안녕하세요 , <?php echo $s_name; ?>님</span>
-          <a href="mem_info.php" class="mypage_btn">마이페이지</a>
-          <a href="/HELPER_WEB/html/logout.php" class="logout_btn">로그아웃</a>
+          <a href="../html/mypage.php" class="mypage_btn">마이페이지</a>
+          <a href="../html/logout.php" class="logout_btn">로그아웃</a>
         </div>
       </div>
     </seciton>
@@ -660,7 +660,7 @@
                   <h3 class="depth_title">음악·악기 레슨</h3>
                   <ul>
                     <li class="depth3">
-                      <a href="./html/guitar_lesson.html">기타 레슨</a>
+                      <a href="../html/guitar_lesson.php">기타 레슨</a>
                     </li>
                     <li class="depth3"><a href="#">베이스 레슨</a></li>
                     <li class="depth3"><a href="#">드럼 레슨</a></li>

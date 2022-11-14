@@ -28,12 +28,12 @@ function form_check() {
     u_id.focus();
     return false;
   }
-  if (!regExp.test(id_value)) {
-    var txt = document.getElementById("err_id");
-    txt.innerHTML = "* 이메일 형식으로 입력해주세요.";
-    u_id.focus();
-    return false;
-  }
+  // if (!regExp.test(id_value)) {
+  //   var txt = document.getElementById("err_id");
+  //   txt.innerHTML = "* 이메일 형식으로 입력해주세요.";
+  //   u_id.focus();
+  //   return false;
+  // }
   if (pwd.value == "") {
     var err_pwd = document.getElementById("err_pwd");
     err_pwd.innerHTML = "* 비밀번호를 입력해주세요";

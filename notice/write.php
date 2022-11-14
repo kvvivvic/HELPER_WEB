@@ -1,3 +1,8 @@
+<?php
+include "../inc/session.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="ko">
 

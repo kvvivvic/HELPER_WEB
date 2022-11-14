@@ -62,10 +62,10 @@ include "./inc/session.php";
             <ul class="sign_menu">
               <li class="ex_sign_in"><a href="#">전문가 등록</a></li>
               <li class="sign_in">
-                <a href="../HELPER_WEB/html/login_page.html">로그인</a>
+                <a href="./html/login_page.php">로그인</a>
               </li>
               <li class="free">
-                <a href="./html/select_signin.html">무료 회원가입</a>
+                <a href="./html/select_signin.php">무료 회원가입</a>
               </li>
             </ul>
           </div>
@@ -325,7 +325,7 @@ include "./inc/session.php";
                       <h3 class="depth_title">음악·악기 레슨</h3>
                       <ul>
                         <li class="depth3">
-                          <a href="./html/guitar_lesson.html">기타 레슨</a>
+                          <a href="./html/guitar_lesson.php">기타 레슨</a>
                         </li>
                         <li class="depth3"><a href="#">베이스 레슨</a></li>
                         <li class="depth3"><a href="#">드럼 레슨</a></li>
@@ -441,7 +441,7 @@ include "./inc/session.php";
             <div class="user_info">
               <h2 class="hidden">사용자 메뉴</h2>
               <span class="pnt_name">안녕하세요 , <?php echo $s_name; ?>님</span>
-              <a href="mem_info.php" class="mypage_btn">마이페이지</a>
+              <a href="./html/mypage.php" class="mypage_btn">마이페이지</a>
               <a href="/HELPER_WEB/html/logout.php" class="logout_btn">로그아웃</a>
             </div>
           </div>
@@ -851,7 +851,7 @@ include "./inc/session.php";
           <h2 class="hidden">카테고리</h2>
           <ul>
             <li>
-              <a href="./html/category_lesson.html">
+              <a href="./html/category_lesson.php">
                 <img src="./images/category_lesson.png" alt="" />
                 <p>레슨</p>
               </a>
@@ -1086,7 +1086,7 @@ include "./inc/session.php";
           <ul class="notice_menu">
             <li><a class="notice_menu1" href="#">이벤트</a></li>
             <li>
-              <a class="notice_menu2" href="./html/notice.html">공지사항</a>
+              <a class="notice_menu2" href="./notice/list.php">공지사항</a>
             </li>
           </ul>
           <p class="notice_next"></p>
