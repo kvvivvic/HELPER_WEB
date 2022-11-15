@@ -42,14 +42,14 @@
             의로인으로 가입 후 에도 전문가 등록이 가능합니다.
           </p>
           <p class="main_txt3">서비스를 의뢰하고 싶다면?</p>
-          <a class="select1" href="../html/sign_in.html">
+          <a class="select1" href="../html/sign_in.php">
             <label for="choose1" class="label1">
               <img src="../images/selcet_sign_check.png" alt="" />
               <span> 의뢰인으로 가입 </span></label>
             <input id="choose1" class="choose1" type="button" name="choose" checked="checked" />
           </a>
           <p class="main_txt4">서비스를 판매하고 싶다면?</p>
-          <a class="select2" href="../html/expert_signin.html">
+          <a class="select2" href="../html/expert_signin.php">
             <label for="choose2" class="label2">
               <img src="../images/selcet_sign_check.png" alt="" /><span>전문가로 가입</span></label>
             <input class="choose2" id="choose2" type="button" name="choose" />
