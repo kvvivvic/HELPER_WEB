@@ -1,5 +1,6 @@
 <?php
 include "./inc/session.php";
+
 ?>
 
 <!DOCTYPE html>
@@ -443,7 +444,7 @@ include "./inc/session.php";
             <div class="user_info">
               <h2 class="hidden">사용자 메뉴</h2>
               <span class="pnt_name">안녕하세요 , <?php echo $s_name; ?>님</span>
-              <a href="./html/mypage.php" class="mypage_btn">마이페이지</a>
+              <a href="./html/mypage.php?u_id=<?php echo $s_id ?>" class="mypage_btn">마이페이지</a>
               <a href="/HELPER_WEB/html/logout.php" class="logout_btn">로그아웃</a>
             </div>
           </div>

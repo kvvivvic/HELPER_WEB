@@ -50,26 +50,25 @@ $array = mysqli_fetch_array($result);
           </div>
           <h4>이름</h4>
           <div class="profile_name">
-            <a href="">
-              <span><?php echo $array["u_name"] ?></span>
-              <img src="../images/event_btn_next.jpg" alt="" />
-            </a>
+            <span><?php echo $array["u_name"] ?></span>
+            <img src="../images/event_btn_next.jpg" alt="" />
           </div>
           <h4>이메일</h4>
-          <div class="profile_email">
+          <a href="mypage_change_email.php" class="profile_email">
             <span><?php echo $array["u_id"] ?></span>
             <img src="../images/event_btn_next.jpg" alt="" />
-          </div>
+          </a>
           <h4>비밀번호</h4>
-          <div class="profile_pw">
-            <span><?php echo $array["pwd"] ?></span>
+          <a href="mypage_change_pw.php" class="profile_pw">
+            <span><?php
+                  echo preg_replace('/[A-za-z0-9]/', '*', $array['pwd']); ?></span>
             <img src="../images/event_btn_next.jpg" alt="" />
-          </div>
+          </a>
           <h4>휴대폰 번호</h4>
-          <div class="profile_number">
+          <a href="mypage_change_phone.php" class="profile_number">
             <span><?php echo $array["mobile"] ?></span>
             <img src="../images/event_btn_next.jpg" alt="" />
-          </div>
+          </a>
           <div class="profile_exit">
             <h4>계정탈퇴</h4>
           </div>

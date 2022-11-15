@@ -32,27 +32,28 @@ include "../inc/session.php";
     <!-- main -->
     <main>
       <div class="main_inner">
-        <h2>휴대전화 번호 설정</h2>
-        <div class="exp">
-          <img src="../images/mypage_ex_icon.svg" alt="" />
-          <span>설정한 번호로 헬퍼 알림을 받을 있습니다.</span>
-        </div>
-        <div>
-          <h3>휴대전화 번호 인증</h3>
-          <form action="" name="phone
-          ">
-            <input type="text" placeholder="예) 010-2529-2232" />
-            <button name="phone" class="send_btn">전송</button>
-            <p>
-              전화번호는 절대 공개되지 않으며 , 안심번호를 통해 상담 전화가 올
-              수 있습니다.
-            </p>
-          </form>
-        </div>
-        <div class="end_btn">
-          <button class="cancel_btn">취소</button>
-          <button class="finish_btn">수정완료</button>
-        </div>
+        <form action="edit_phone.php" name="mobile_form
+        " method="post">
+          <fieldset>
+            <h2>휴대전화 번호 설정</h2>
+            <div class="exp">
+              <img src="../images/mypage_ex_icon.svg" alt="" />
+              <span>설정한 번호로 헬퍼 알림을 받을 있습니다.</span>
+            </div>
+            <div>
+              <h3>휴대전화 번호 변경</h3>
+              <input type="text" placeholder="예) 010-2529-2232" name="mobile" />
+              <p>
+                전화번호는 절대 공개되지 않으며 , 안심번호를 통해 상담 전화가 올
+                수 있습니다.
+              </p>
+            </div>
+            <div class="end_btn">
+              <button class="cancel_btn">취소</button>
+              <button class="finish_btn" type="submit">수정완료</button>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
     <!-- footer -->

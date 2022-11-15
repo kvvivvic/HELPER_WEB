@@ -1,5 +1,9 @@
 <?php
 include "../inc/session.php";
+include "../inc/dbcon.php";
+$sql = "select * from members where u_id='$s_id';";
+$result = mysqli_query($dbcon, $sql);
+$array = mysqli_fetch_array($result);
 ?>
 
 
@@ -31,20 +35,24 @@ include "../inc/session.php";
     <?php include "../inc/header.php" ?>
     <!-- main -->
     <main>
-      <div class="main_inner">
-        <h2>이메일 수정</h2>
-        <div>
-          <h3>이메일</h3>
-          <input type="text" placeholder="kghwan2@naver.com" />
-        </div>
-        <div class="end_btn">
-          <button class="cancel_btn">취소</button>
-          <button class="finish_btn">수정완료</button>
-        </div>
-      </div>
+      <form class="main_inner" name="edit_email" action="edit_email.php" method="POST">
+        <fieldset>
+          <h2>이메일 수정</h2>
+          <div>
+            <h3>이메일</h3>
+            <input type="text" value="<?php echo $array["u_id"] ?>" name="c_email" />
+          </div>
+          <div class="end_btn">
+            <button class="cancel_btn">취소</button>
+            <button class="finish_btn" type="submit">수정완료</button>
+          </div>
+        </fieldset>
+      </form>
     </main>
     <!-- footer -->
-    <?php include "../inc/footer.php" ?>
+    <?php include "../inc/footer.php";
+    mysqli_close($dbcon);
+    ?>
   </div>
 </body>
 

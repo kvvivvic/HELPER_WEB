@@ -32,23 +32,29 @@ include "../inc/session.php";
     <!-- main -->
     <main>
       <div class="main_inner">
-        <h2>비밀번호 변경</h2>
-        <div>
-          <h3>기존 비밀번호</h3>
-          <input type="password" placeholder="현재 비밀번호를 입력해 주세요." />
-        </div>
-        <div>
-          <h3>새로운 비밀번호</h3>
-          <input type="password" placeholder="영문 + 숫자 조합 8자리 이상 입력해주세요." />
-        </div>
-        <div>
-          <h3>새로운 비밀번호 확인</h3>
-          <input type="password" placeholder="비밀번호를 한번 더 입력해주세요." />
-        </div>
-        <div class="end_btn">
-          <button class="cancel_btn">취소</button>
-          <button class="finish_btn">수정완료</button>
-        </div>
+        <form action="edit_pwd.php" method="post" name="edit_pwd_form">
+          <fieldset>
+            <h2>비밀번호 변경</h2>
+            <div>
+              <h3>기존 비밀번호</h3>
+              <input type="password" placeholder="현재 비밀번호를 입력해 주세요." name="pwd" />
+              <span class="err_txt" id="err_pw"></span>
+            </div>
+            <div>
+              <h3>새로운 비밀번호</h3>
+              <input type="password" placeholder="영문 + 숫자 조합 8자리 이상 입력해주세요." name="new_pwd" />
+              <span class="err_txt" id="err_new_pwd"></span>
+            </div>
+            <div>
+              <h3>새로운 비밀번호 확인</h3>
+              <input type="password" placeholder="비밀번호를 한번 더 입력해주세요." name="re_new_pwd" />
+            </div>
+            <div class="end_btn">
+              <button class="cancel_btn">취소</button>
+              <button class="finish_btn" type="submit">수정완료</button>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
     <!-- footer -->
