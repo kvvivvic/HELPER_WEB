@@ -40,6 +40,14 @@ mysqli_query($dbcon, $sql);
   <script src="https://kit.fontawesome.com/75062a3531.js" crossorigin="anonymous"></script>
   <script defer src="../js/nav_hover.js"></script>
   <title>Document</title>
+  <script>
+  function remove_notice(g_no) {
+    var ck = confirm("정말 삭제하시겠습니까?");
+    if (ck) {
+      location.href = "delete.php?n_idx=" + g_no;
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -57,9 +65,15 @@ mysqli_query($dbcon, $sql);
                 <input type="text" placeholder="검색" />
                 <img src="../images/detail_search.jpg" alt="검색" />
               </div>
-            </fieldset>
-          </form>
         </section>
+        <?php if ($s_id === "admin@google.co.kr") { ?>
+        <div class="modify_btn">
+          <a href="modify.php?n_idx=<?php echo $array["idx"]; ?>" class="e_btn">수정</a>
+          <a href="#" class="d_btn" onclick="remove_notice(<?php echo $array["idx"]; ?>);">삭제</a>
+        </div>
+        <?php }; ?>
+        </fieldset>
+        </form>
         <div class="detail_main">
           <aside class="aside_section">
             <h3>이 섹션의 문서</h3>
@@ -99,6 +113,7 @@ mysqli_query($dbcon, $sql);
         <section class="path">
           <div class="path_inner"></div>
         </section>
+        <?php if ($s_id != "admin@google.co.kr") { ?>
         <section class="question">
           <div class="question_inner">
             <p>다른 질문이 있으십니까?</p>
@@ -109,6 +124,7 @@ mysqli_query($dbcon, $sql);
             <button>문의하기</button>
           </div>
         </section>
+        <?php }; ?>
       </div>
     </main>
     <!-- footer -->

@@ -19,6 +19,7 @@ fieldset {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .detail_search p {
   width: 400px;
@@ -189,4 +190,39 @@ tbody tr {
 }
 .aside_section ul li a {
   width: 100%;
+}
+.modify_btn {
+  position: absolute;
+  right: 186px;
+  bottom: 274px;
+}
+.e_btn {
+  padding: 8px 32px;
+  background-color: #ffd300;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 6px;
+}
+.d_btn {
+  padding: 8px 32px;
+  background-color: #ffd300;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 6px;
+}
+.e_btn:hover {
+  border: 1px solid #ffd300;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #fdf3c4;
+  color: #ffd300;
+  transition: 0.1s;
+}
+.d_btn:hover {
+  border: 1px solid #ffd300;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #fdf3c4;
+  color: #ffd300;
+  transition: 0.1s;
 }

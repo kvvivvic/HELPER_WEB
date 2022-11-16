@@ -1,5 +1,17 @@
 <?php
 include "../inc/session.php";
+include "../inc/dbcon.php";
+
+//데이터 가져오기
+$n_idx = $_GET["n_idx"];
+//쿼리 작성
+$sql = "select * from notice where idx = $n_idx;";
+//쿼리 전송
+$result = mysqli_query($dbcon, $sql);
+
+//DB 에서 데이터 가져오기
+$array = mysqli_fetch_array($result);
+
 ?>
 
 
@@ -62,7 +74,8 @@ include "../inc/session.php";
     <?php include "../inc/header.php"  ?>
     <!-- main -->
     <main>
-      <form action="insert.php" method="post" name="text_form" id="text_form" onsubmit="return notice_check()">
+      <form action="edit.php?n_idx=<?php echo $n_idx ?>" method="post" name="text_form" id="text_form"
+        onsubmit="return notice_check()">
         <fieldset>
           <section class="select_notice">
             <div class="select">
@@ -71,7 +84,7 @@ include "../inc/session.php";
             </div>
             <div class="write">
               <button class="n_btn" type="button" onclick="back()">취소</button>
-              <button class="n_btn" type="submit">등록</button>
+              <button class="n_btn" type="submit">수정</button>
             </div>
           </section>
           <section class="picture">
@@ -83,13 +96,14 @@ include "../inc/session.php";
           </section>
 
           <label class="n_title">
-            <input type="text" placeholder="제목을 입력해주세요." value="" id="n_title" name="n_title" />
+            <input type="text" placeholder="제목을 입력해주세요." id="n_title" name="n_title"
+              value="<?php echo $array["n_title"] ?>" />
           </label>
           <label class="n_content">
             <p>내용</p>
           </label>
           <section class="textra">
-            <textarea name="n_content" id="n_content"></textarea>
+            <textarea name="n_content" id="n_content"><?php echo $array["n_content"] ?></textarea>
         </fieldset>
       </form>
       </section>

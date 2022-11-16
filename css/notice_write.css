@@ -37,14 +37,16 @@ fieldset {
   justify-content: center;
 }
 .picture {
+  width: 1200px;
   height: 62px;
   background-color: #fafafa;
+  margin: 0 auto;
 }
 .select_picture {
   width: 137px;
   height: 62px;
   display: flex;
-  margin-left: 132px;
+  margin-left: 22px;
   align-items: center;
 }
 .select_picture img {
