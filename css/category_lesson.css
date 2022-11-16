@@ -143,14 +143,19 @@ input[type="text"] {
 .fav_img {
   width: 365px;
   height: 143px;
-  background-color: cornflowerblue;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  overflow: hidden;
+}
+.fav_img img {
+  overflow: hidden;
+  object-fit: cover;
+  width: 365px;
+  height: 143px;
 }
 .fav_txt {
   width: 365px;
   height: 48px;
-  background-color: coral;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,4 +174,13 @@ input[type="text"] {
 .cont5,
 .cont6 {
   margin-bottom: 32px;
+}
+.li_con li {
+  box-shadow: 6px 6px 10px #d1d1d1;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.li_con li:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
 }

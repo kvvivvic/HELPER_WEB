@@ -88,10 +88,10 @@ include "../inc/session.php";
       </section>
       <section class="favorite_servies">
         <h3>인기 서비스</h3>
-        <ul>
+        <ul class="li_con">
           <li class="cont1">
             <a href="../html/guitar_lesson.php">
-              <div class="fav_img"><img src="" alt="" /></div>
+              <div class="fav_img"><img src="../images/lesson_guitar.jpg" alt="기타레슨"></div>
               <div class="fav_txt">
                 <span>기타레슨</span>
               </div>
@@ -99,7 +99,7 @@ include "../inc/session.php";
           </li>
           <li class="cont2">
             <a href="">
-              <div class="fav_img"></div>
+              <div class="fav_img"><img src="../images/lesson_vocal.jpg" alt="보컬레슨"></div>
               <div class="fav_txt">
                 <span>보컬레슨</span>
               </div>
@@ -107,7 +107,7 @@ include "../inc/session.php";
           </li>
           <li class="cont3">
             <a href="">
-              <div class="fav_img"></div>
+              <div class="fav_img"><img src="../images/lesson_dance.jpg" alt="방송댄스레슨"></div>
               <div class="fav_txt">
                 <span>방송댄스 레슨</span>
               </div>
@@ -115,7 +115,7 @@ include "../inc/session.php";
           </li>
           <li class="cont4">
             <a href="">
-              <div class="fav_img"></div>
+              <div class="fav_img"><img src="../images/lesson_math.jpg" alt="수학과외"></div>
               <div class="fav_txt">
                 <span>수학과외</span>
               </div>
@@ -123,7 +123,7 @@ include "../inc/session.php";
           </li>
           <li class="cont5">
             <a href="">
-              <div class="fav_img"></div>
+              <div class="fav_img"><img src="../images/lesson_english.jpg" alt="영어과외"></div>
               <div class="fav_txt">
                 <span>영어과외</span>
               </div>
@@ -131,7 +131,7 @@ include "../inc/session.php";
           </li>
           <li class="cont6">
             <a href="">
-              <div class="fav_img"></div>
+              <div class="fav_img"><img src="../images/lesson_chinese.jpg" alt="중국어과외"></div>
               <div class="fav_txt">
                 <span>중국어과외</span>
               </div>
@@ -139,7 +139,7 @@ include "../inc/session.php";
           </li>
           <li class="cont7">
             <a href="">
-              <div class="fav_img"></div>
+              <div class="fav_img"><img src="../images/lesson_golf.jpg" alt="골프레슨"></div>
               <div class="fav_txt">
                 <span>골프레슨</span>
               </div>
@@ -147,7 +147,7 @@ include "../inc/session.php";
           </li>
           <li class="cont8">
             <a href="">
-              <div class="fav_img"></div>
+              <div class="fav_img"><img src="../images/lesson_soccer.jpg" alt="축구레슨"></div>
               <div class="fav_txt">
                 <span>축구레슨</span>
               </div>
@@ -155,7 +155,7 @@ include "../inc/session.php";
           </li>
           <li class="cont9">
             <a href="">
-              <div class="fav_img"></div>
+              <div class="fav_img"><img src="../images/lesson_billiards.jpg" alt="당구레슨"></div>
               <div class="fav_txt">
                 <span>당구레슨</span>
               </div>
