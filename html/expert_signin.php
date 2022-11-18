@@ -19,6 +19,11 @@
   <script src="https://kit.fontawesome.com/75062a3531.js" crossorigin="anonymous"></script>
   <script defer src="../js/expert_signin.js"></script>
   <title>expert_signin</title>
+  <script>
+  function phone_check() {
+    alert("인증이 완료되었습니다!");
+  }
+  </script>
 </head>
 
 <body>
@@ -29,7 +34,7 @@
     <main>
       <h2 class="main_logo">Helper</h2>
       <div class="main_inner">
-        <form action="insert.php" name="expert_sign_form" onsubmit="return form_check()" id="sign_form"
+        <form action="insert_ex.php" name="expert_sign_form" onsubmit="return form_check()" id="sign_form"
           class="sign_form" method="post">
           <fieldset>
             <div class="main_box">
@@ -37,17 +42,17 @@
               <div class="info_box">
                 <label class="u_name">
                   <p>이름</p>
-                  <input type="text" placeholder="이름을 입력해주세요." id="u_name" class="u_name" />
+                  <input type="text" placeholder="이름을 입력해주세요." id="u_name" class="u_name" name="u_name" />
                   <span class="err_txt" id="err_name"></span>
                 </label>
                 <label class="info_id">
                   <h3>이메일</h3>
-                  <input type="text" id="u_id" class="u_id" placeholder="이메일을 입력해주세요." />
+                  <input type="text" id="u_id" class="u_id" placeholder="이메일을 입력해주세요." name="u_id" />
                   <span class="err_txt" id="err_id"></span>
                 </label>
                 <label>
                   <p>비밀번호</p>
-                  <input class="info_pw" type="password" placeholder="비밀번호를 입력해주세요.(6자리 이상)" id="u_pw" />
+                  <input class="info_pw" type="password" placeholder="비밀번호를 입력해주세요.(6자리 이상)" id="u_pw" name="pwd" />
                   <span class="err_txt" id="err_pw"></span>
                   <input type="password" placeholder="비밀번호를 한번 더 입력해주세요." id="re_pw" class="re_pw" />
                   <span class="err_txt" id="err_re_pw"></span>
@@ -83,10 +88,10 @@
               <div class="phone">
                 <p>휴대전화 번호 인증</p>
                 <div class="phone_number">
-                  <input class="number_input" type="text" placeholder="- 를 제외하고 입력해주세요." />
+                  <input class="number_input" type="text" placeholder="- 를 제외하고 입력해주세요." name="mobile" />
                 </div>
                 <div class="cert_btn_inner">
-                  <button class="cert_btn">인증하기</button>
+                  <button class="cert_btn" onclick="phone_check()">인증하기</button>
                 </div>
               </div>
               <div class="checkbox">
@@ -98,7 +103,7 @@
                 <label for="age">만 14세 이상(필수)</label>
                 <span class="err_txt" id="err_age"></span>
               </div>
-              <button class="sign_btn" onclick="return form_check();">
+              <button class="sign_btn" onclick="return form_check();" type="submit">
                 회원가입
               </button>
               <button class="googlesign_btn">

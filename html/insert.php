@@ -6,8 +6,6 @@
 $u_name = $_POST["u_name"];
 $u_id = $_POST["u_id"];
 $pwd = $_POST["pwd"];
-$job = $_POST[""];
-
 // 날짜구하기
 $reg_date = date("Y-m-d");
 
@@ -62,7 +60,7 @@ mysqli_close($dbcon);
 // 완료 되면 페이지 이동 script  (리디렉션)
 
 echo "<script type=\"text/javascript\">
-location.href = \"../html/complete_signin.html\";
+location.href = \"../html/complete_signin.php\";
 </script>";
 
 // 
