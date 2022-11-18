@@ -21,6 +21,7 @@ include "../inc/session.php";
   <!-- Script -->
   <script src="../js/jquery-3.6.1.min.js"></script>
   <script defer src="../js/index.js"></script>
+  <script defer src="../js/detail.js"></script>
   <script defer src="https://kit.fontawesome.com/75062a3531.js" crossorigin="anonymous"></script>
   <title>헬퍼</title>
 </head>
@@ -56,14 +57,14 @@ include "../inc/session.php";
           </div>
           <div>
             <ul class="detail">
-              <li class="detail_link1">서비스설명</li>
-              <li class="detail_link2">가격정보</li>
-              <li class="detail_link3">취소·환불</li>
-              <li class="detail_link4">서비스평가</li>
+              <li class="detail_link1 scroll">서비스설명</li>
+              <li class="detail_link2 scroll">가격정보</li>
+              <li class="detail_link3 scroll">취소·환불</li>
+              <li class="detail_link4 scroll">서비스평가</li>
             </ul>
           </div>
           <div class="detail_inner">
-            <p class="datail_txt1">서비스 설명</p>
+            <p class="datail_txt1 txt1">서비스 설명</p>
             <p class="datail_txt2">-</p>
             <p class="datail_txt3">동해물과 백두산이 마르고 닳도록</p>
           </div>
@@ -72,7 +73,7 @@ include "../inc/session.php";
             <p class="datail_txt3">동해물과 백두산이 마르고 닳도록</p>
           </div>
           <div class="detail_price">
-            <p class="datail_txt2">가격 정보</p>
+            <p class="datail_txt2 txt2">가격 정보</p>
             <div class="price_box">
               <p class="box_txt1">4,000,000원</p>
 
@@ -99,15 +100,15 @@ include "../inc/session.php";
               </table>
             </div>
             <div class="buy">
-              <button>구매하기</button>
+              <a href="../html/payment.php"><button>구매하기</button></a>
             </div>
           </div>
           <div class="cancel">
-            <p class="datail_txt2">취소 및 환불 규정</p>
+            <p class="datail_txt2 txt3">취소 및 환불 규정</p>
             <p class="datail_txt3">동해물과 백두산이 마르고 닳도록</p>
           </div>
           <div class="serv_review">
-            <p class="datail_txt2">사용자 평가</p>
+            <p class="datail_txt2 txt4">사용자 평가</p>
             <div class="review2">
               <img src="../images/review_icon.png" width="11px" height="11px" alt="" />
               <img src="../images/review_icon.png" width="11px" height="11px" alt="" />
@@ -146,7 +147,7 @@ include "../inc/session.php";
                 </tr>
               </table>
               <div class="buy_btn2">
-                <button class="buy_btn_right">구매하기</button>
+                <a href="../html/payment.php"><button class="buy_btn_right">구매하기</button></a>
               </div>
             </div>
           </div>
