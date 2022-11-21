@@ -68,10 +68,6 @@ mysqli_query($dbcon, $sql);
               </div>
         </section>
         <?php if ($s_id === "admin@google.co.kr") { ?>
-        <div class="modify_btn">
-          <a href="modify.php?n_idx=<?php echo $array["idx"]; ?>" class="e_btn">수정</a>
-          <a href="#" class="d_btn" onclick="remove_notice(<?php echo $array["idx"]; ?>);">삭제</a>
-        </div>
         <?php }; ?>
         </fieldset>
         </form>
@@ -125,7 +121,14 @@ mysqli_query($dbcon, $sql);
             <button>문의하기</button>
           </div>
         </section>
-        <?php }; ?>
+        <?php } else { ?>
+        <div class="modify_inner">
+          <div class="modify_btn">
+            <a href="modify.php?n_idx=<?php echo $array["idx"]; ?>" class="e_btn">수정</a>
+            <a href="#" class="d_btn" onclick="remove_notice(<?php echo $array["idx"]; ?>);">삭제</a>
+          </div>
+        </div>
+        <?php } ?>
       </div>
     </main>
     <!-- footer -->

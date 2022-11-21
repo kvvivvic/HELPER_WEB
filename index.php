@@ -1,6 +1,6 @@
 <?php
 include "./inc/session.php";
-
+include "./inc/dbcon.php";
 ?>
 
 <!DOCTYPE html>
@@ -1116,21 +1116,18 @@ include "./inc/session.php";
           <p class="notice_next"></p>
           <p class="event_next"></p>
           <div class="notice">
+            <?php $sql = "select * from notice order by idx desc limit 3;";
+            $result = mysqli_query($dbcon, $sql);
+            while ($array = mysqli_fetch_array($result)) {
+            ?>
             <div class="notice_list">
-              <p class="list1">공지사항</p>
-              <p class="list2">개인정보 처리방침 변경 안내</p>
-              <p class="list3">2222-22-22</p>
+              <a href="./notice/view.php?n_idx=<?php echo $array["idx"] ?>">
+                <p class="list1">공지사항</p>
+                <p class="list2"><?php echo $array["n_title"] ?></p>
+                <p class="list3"><?php echo substr($array["w_date"], 0, 10) ?></p>
+              </a>
             </div>
-            <div class="notice_list">
-              <p class="list1">공지사항</p>
-              <p class="list2">헬퍼 앱 출시!</p>
-              <p class="list3">2222-22-22</p>
-            </div>
-            <div class="notice_list">
-              <p class="list1">공지사항</p>
-              <p class="list2">사업장 확장 이전 안내</p>
-              <p class="list3">2222-22-22</p>
-            </div>
+            <?php }; ?>
           </div>
         </div>
       </section>
