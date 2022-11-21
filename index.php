@@ -37,6 +37,27 @@ include "./inc/session.php";
   <!-- JS -->
   <script defer src="./js/swiper.js"></script>
   <script defer src="./js/index.js"></script>
+  <script>
+  $(document).ready(function() {
+
+    $(window).scroll(function() {
+      // top button controll
+      if ($(this).scrollTop() > 500) {
+        $('#topButton').fadeIn();
+      } else {
+        $('#topButton').fadeOut();
+      }
+    });
+
+    $("#topButtonImg").click(function() {
+      $('html, body').animate({
+        scrollTop: 0
+      }, '300');
+    });
+
+  });
+  </script>
+  ​
   <title>헬퍼</title>
 </head>
 
@@ -1037,10 +1058,10 @@ include "./inc/session.php";
               </div>
             </a>
             <a href="#" class="fav favorite4">
-              <img src="./images/favorite_img4.jpg" alt="" />
+              <img src="./images/shinsei.jpeg" alt="" />
               <div class="fav_txt">
-                <p class="fav_name">김김김</p>
-                <p class="fav_txt1">축가</p>
+                <p class="fav_name">신세이 카맛테쨩</p>
+                <p class="fav_txt1">밴드 레슨</p>
                 <p class="fav_txt2">별점5.0(111)</p>
               </div>
             </a>
@@ -1195,6 +1216,7 @@ include "./inc/session.php";
             <li class="facebook"><a href="#">페이스북</a></li>
           </ul>
         </section>
+        <div id="topButton" style="cursor: pointer"><img src="./images/totop_btn.png" id="topButtonImg"></div>
       </div>
     </footer>
   </div>

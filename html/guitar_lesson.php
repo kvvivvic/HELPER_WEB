@@ -107,10 +107,10 @@ include "../inc/session.php";
             <li>
               <a href="#">
                 <p class="exp_img">
-                  <img src="../images/bbking.jpeg" alt="" />
+                  <img src="../images/shinsei1.jpeg" alt="" />
                 </p>
-                <p class="exp_name">bbking</p>
-                <p class="explan">기타 재밌게 알려드립니다.</p>
+                <p class="exp_name">신세이 카맛테쨩</p>
+                <p class="explan">일본 최고의 밴드 신세이 카맛테쨩!</p>
                 <p class="price">4,000,000원</p>
                 <p class="exp_review">
                   <img src="../images/review_icon.png" width="11px" height="11px" alt="" />

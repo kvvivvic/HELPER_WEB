@@ -22,6 +22,7 @@ include "../inc/session.php";
   <script src="../js/jquery-3.6.1.min.js"></script>
   <script defer src="../js/index.js"></script>
   <script src="https://kit.fontawesome.com/75062a3531.js" crossorigin="anonymous"></script>
+  <script src="../js/to_top.js"></script>
   <title>회원가입 완료!</title>
 </head>
 

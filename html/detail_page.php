@@ -23,6 +23,7 @@ include "../inc/session.php";
   <script defer src="../js/index.js"></script>
   <script defer src="../js/detail.js"></script>
   <script defer src="https://kit.fontawesome.com/75062a3531.js" crossorigin="anonymous"></script>
+  <script src="../js/to_top.js"></script>
   <title>헬퍼</title>
 </head>
 

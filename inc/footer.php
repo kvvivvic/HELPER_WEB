@@ -79,5 +79,6 @@
             <li class="facebook"><a href="#">페이스북</a></li>
           </ul>
         </section>
+        <div id="topButton" style="cursor: pointer"><img src="../images/totop_btn.png" id="topButtonImg"></div>
       </div>
     </footer>

@@ -21,6 +21,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
   <script defer src="../js/nav_hover.js"></script>
   <script defer src="../js/select_signin.js"></script>
+  <script src="../js/to_top.js"></script>
   <title>Document</title>
 </head>
 

@@ -18,6 +18,7 @@
   <script defer src="../js/index.js"></script>
   <script src="https://kit.fontawesome.com/75062a3531.js" crossorigin="anonymous"></script>
   <script defer src="../js/expert_signin.js"></script>
+  <script src="../js/to_top.js"></script>
   <title>expert_signin</title>
   <script>
   function phone_check() {

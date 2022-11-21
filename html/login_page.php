@@ -17,6 +17,7 @@
   <script src="../js/jquery-3.6.1.min.js"></script>
   <script defer src="../js/nav_hover.js"></script>
   <script defer src="../js/login_page.js"></script>
+  <script src="../js/to_top.js"></script>
   <script src="https://kit.fontawesome.com/75062a3531.js" crossorigin="anonymous"></script>
   <title>Helper Login</title>
 </head>

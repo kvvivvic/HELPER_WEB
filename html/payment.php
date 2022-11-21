@@ -22,6 +22,7 @@ include "../inc/session.php";
   <script src="../js/jquery-3.6.1.min.js"></script>
   <script defer src="../js/payment.js"></script>
   <script defer src="../js/nav_hover.js"></script>
+  <script src="../js/to_top.js"></script>
   <title>Document</title>
 </head>
 

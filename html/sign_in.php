@@ -25,6 +25,7 @@ include "../inc/session.php";
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
   <script defer src="../js/nav_hover.js"></script>
   <script defer src="../js/sign_in.js"></script>
+  <script src="../js/to_top.js"></script>
   <title>Helper Sign in</title>
 </head>
 
