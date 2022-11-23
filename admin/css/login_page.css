@@ -1,0 +1,144 @@
+/* main */
+main {
+  margin-top: 250px;
+}
+fieldset {
+  border: none;
+}
+legend + label {
+  -webkit-margin-top-collapse: separate;
+  margin-bottom: 26px;
+}
+.main_inner {
+  width: 392px;
+  height: 460px;
+  margin: 154px auto 224px;
+  position: relative;
+}
+.signin {
+  font-size: 32px;
+  font-weight: bold;
+  color: #323232;
+  margin-bottom: 26px;
+}
+.forget {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.forget a {
+  font-size: 12px;
+  color: #737373;
+}
+.login_id {
+  width: 392px;
+  height: 44px;
+  padding: 0 24px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 3px;
+}
+.login_input::placeholder {
+  padding-left: 24px;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+.login_id:focus {
+  outline: 2px solid #ffd300;
+}
+.login_pw {
+  width: 392px;
+  height: 44px;
+  margin-bottom: 12px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 3px;
+}
+.login_pw:focus {
+  outline: 2px solid #ffd300;
+}
+.login_btn {
+  width: 392px;
+  height: 44px;
+  border-radius: 22px;
+  border: 2px solid #ffd300;
+  font-size: 16px;
+  font-weight: bold;
+  color: #323232;
+  margin-bottom: 12px;
+  background-color: transparent;
+}
+.signin_btn {
+  width: 392px;
+  height: 44px;
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ffd300;
+  border: none;
+  color: #323232;
+}
+.other_login h3 {
+  font-size: 12px;
+  color: #737373;
+  text-align: center;
+  margin-top: 34px;
+}
+.login_kakao {
+  width: 38px;
+  height: 38px;
+  background-image: url(../images/login_kakao.png);
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.login_google {
+  width: 38px;
+  height: 38px;
+  background-image: url(../images/login_google.png);
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.login_facebook {
+  width: 38px;
+  height: 38px;
+  background-image: url(../images/login_facebook.png);
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.login_twitter {
+  width: 38px;
+  height: 38px;
+  background-image: url(../images/login_twitter.png);
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.login_line {
+  width: 38px;
+  height: 38px;
+  background-image: url(../images/login_line.png);
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.login_apple {
+  width: 38px;
+  height: 38px;
+  background-image: url(../images/login_apple.png);
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.other_login_list {
+  width: 360px;
+  display: flex;
+  margin: 24px auto;
+  justify-content: space-around;
+}
+.err_txt {
+  display: block;
+  font-size: 12px;
+  color: red;
+  margin-bottom: 12px;
+}

@@ -21,9 +21,9 @@ include "../inc/dbcon.php";
 //데이터 저장 쿼리 작성
 
 $sql = "insert into members (
-  u_name , u_id ,pwd ,mobile,job , bsn ,reg_date
+  u_name , u_id ,pwd ,mobile,type,job , bsn ,reg_date
 ) values (
-  '$u_name','$u_id','$pwd' ,'$mobile','$job','$bs','$reg_date'
+  '$u_name','$u_id','$pwd','$mobile','expert','$job','$bs','$reg_date'
 );";
 //데이터 베이스로 데이터 전송
 mysqli_query($dbcon, $sql);

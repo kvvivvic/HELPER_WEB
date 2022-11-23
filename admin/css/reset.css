@@ -1,0 +1,43 @@
+body,
+h1,
+h2,
+h3,
+p,
+div,
+ul,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif, "나눔고딕", "맑은 고딕", "돋움";
+  font-size: 14px;
+  margin: 0 auto;
+}
+.body_inner {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000; /* inherit */
+}
+address {
+  font-style: normal;
+}
+.hidden {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+fieldset {
+  border: none;
+}

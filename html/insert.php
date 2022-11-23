@@ -45,11 +45,10 @@ include "../inc/dbcon.php";
 
 
 $sql = "insert into members (
-  u_name , u_id ,pwd ,reg_date
+  u_name , u_id ,pwd ,type,reg_date
 ) values (
-  '$u_name','$u_id','$pwd','$reg_date'
+  '$u_name','$u_id','$pwd','buyer','$reg_date'
 );";
-
 //데이터 베이스로 데이터 전송
 mysqli_query($dbcon, $sql);
 

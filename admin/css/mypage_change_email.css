@@ -1,0 +1,57 @@
+main {
+  height: 816px;
+  border: 1px solid #000;
+}
+.main_inner {
+  width: 796px;
+  height: 374px;
+  margin: 171px auto 274px;
+}
+.main_inner h2 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #303441;
+  margin-bottom: 58px;
+}
+.main_inner h3 {
+  font-size: 16px;
+  color: #323232;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+.main_inner input {
+  width: 796px;
+  height: 48px;
+  border: 1px solid #f3f3f3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 48px;
+}
+.main_inner input::placeholder {
+  font-size: 18px;
+  color: #323232;
+  padding-left: 18px;
+}
+.end_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.main_inner .cancel_btn {
+  width: 138px;
+  height: 48px;
+  border: 1px solid #e1e1e1;
+  background-color: #fff;
+  border-radius: 6px;
+  color: #ffd300;
+  cursor: pointer;
+}
+.main_inner .finish_btn {
+  width: 138px;
+  height: 48px;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffd300;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 12px;
+}
