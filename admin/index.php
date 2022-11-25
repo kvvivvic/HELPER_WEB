@@ -41,6 +41,7 @@ $array = mysqli_fetch_array($result);
   <script src="https://kit.fontawesome.com/75062a3531.js" crossorigin="anonymous"></script>
   <script defer src="../js/nav_hover.js"></script>
   <script src="../js/to_top.js"></script>
+  <script defer src="../js/index.js"></script>
   <title>Document</title>
 </head>
 

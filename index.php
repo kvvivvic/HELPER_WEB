@@ -38,6 +38,7 @@ include "./inc/dbcon.php";
   <script defer src="./js/swiper.js"></script>
   <script defer src="./js/index.js"></script>
   ​<script src="./js/to_top.js"></script>
+  <script defer src="./js/notice_hover.js"></script>
   <title>헬퍼</title>
 </head>
 
@@ -1476,13 +1477,12 @@ include "./inc/dbcon.php";
             $result = mysqli_query($dbcon, $sql);
             while ($array = mysqli_fetch_array($result)) {
             ?>
-            <div class="notice_list">
-              <a href="./notice/view.php?n_idx=<?php echo $array["idx"] ?>">
-                <p class="list1">공지사항</p>
-                <p class="list2"><?php echo $array["n_title"] ?></p>
-                <p class="list3"><?php echo substr($array["w_date"], 0, 10) ?></p>
-              </a>
-            </div>
+
+            <a class="notice_list" href="./notice/view.php?n_idx=<?php echo $array["idx"] ?>">
+              <p class="list1">공지사항</p>
+              <p class="list2"><?php echo $array["n_title"] ?></p>
+              <p class="list3"><?php echo substr($array["w_date"], 0, 10) ?></p>
+            </a>
             <?php }; ?>
           </div>
         </div>

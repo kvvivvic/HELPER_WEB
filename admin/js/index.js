@@ -73,10 +73,11 @@ $(".depth2").hover(
 //notice list hover event
 $(".notice_list").hover(
   function () {
-    $(this).children(".list1").css("color", "#fff");
+    $(this).children("a .list1").css("color", "#fff");
+    console.log("hi");
   },
   function () {
-    $(this).children(".list1").css("color", "#ffd300");
+    $(this).children(".notice .list1").css("color", "#ffd300");
   }
 );
 
